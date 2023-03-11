@@ -11,6 +11,29 @@ body {
     max-width: 80vw;
     margin: 0 auto;
     padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.bayan__header {
     font-size: 2em;
     font-weight: bold;
 }
+
+.bayan__label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.bayan__img {
+    display: block;
+    max-width: 50vw;
+    max-height: 50vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.bayan__input {
+    -webkit-appearance: none;
+    appearance: none;
+    }
