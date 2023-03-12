@@ -12,7 +12,6 @@ body {
     margin: 0 auto;
     padding-top: 10vh;
     padding-bottom: 10vh;
-
 }
 
 .bayan__header {
@@ -24,7 +23,6 @@ body {
     color:rgb(41, 32, 148);
     font-size: 1.5em;
     font-weight: bold;
-    padding-bottom: 5vh;
     transition: .5s;
 }
 
@@ -50,16 +48,20 @@ body {
 }
 
 .bayan__input {
-    -webkit-appearance: none;
-    appearance: none;
+    display: none;
 }
 
 .bayan__wrapper:hover .bayan__label {
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .bayan__wrapper:hover .bayan__icon {
     opacity: 1;
+}
+
+.bayan__label:hover .bayan__label__wrapper .bayan__icon {
+    transform: rotate(135deg);
 }
 
 .bayan__label:hover > .bayan__img {
