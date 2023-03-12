@@ -78,6 +78,10 @@ body {
     .bayan__label:hover .bayan__label__wrapper .bayan__icon {
         transform: rotate(135deg);
     }
+
+    .bayan__label:hover .bayan__img {
+        max-height: 60vh;
+    }
 }
 
 @media (max-width: 1920px) {
