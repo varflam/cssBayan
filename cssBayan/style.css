@@ -15,14 +15,6 @@ body {
 
 }
 
-.bayan__wrapper:hover .bayan__label {
-    color: rgb(0, 0, 0);
-}
-
-.bayan__wrapper:hover .bayan__icon {
-    opacity: 1;
-}
-
 .bayan__header {
     font-size: 2em;
     font-weight: bold;
@@ -62,6 +54,14 @@ body {
     appearance: none;
 }
 
+.bayan__wrapper:hover .bayan__label {
+    color: rgb(0, 0, 0);
+}
+
+.bayan__wrapper:hover .bayan__icon {
+    opacity: 1;
+}
+
 .bayan__label:hover > .bayan__img {
     max-height: 50vh;
 }
@@ -74,15 +74,10 @@ body {
     color:rgb(0, 0, 0);
 }
 
-.bayan__input:checked + .bayan__label__wrapper .bayan__icon, .bayan__label:hover .bayan__label__wrapper .bayan__icon {
-    transform: rotate(135deg);
-}
-
 .bayan__input:checked + .bayan__label__wrapper .bayan__label__span {
     color:rgb(0, 0, 0);
 }
 
 .bayan__input:checked + .bayan__label__wrapper .bayan__icon {
-    opacity: 1;
     transform: rotate(135deg);
 }
