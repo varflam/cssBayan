@@ -1,0 +1,127 @@
+* {
+    font-family: 'Golos Text', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(181, 220, 181);
+}
+
+.bayan {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.bayan__header {
+    font-weight: bold;
+}
+
+.bayan__label {
+    color:rgb(41, 32, 148);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.bayan__label__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bayan__icon {
+    opacity: 0;
+    max-height: 5vh;
+    transition: .5s;
+}
+
+.bayan__img {
+    display: block;
+    max-height: 0;
+    max-width: 60vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    transition: .5s;
+}
+
+.bayan__input {
+    display: none;
+}
+
+.bayan__input:checked ~ .bayan__img {
+    max-height: 60vh;
+}
+
+.bayan__input:checked .bayan__label {
+    color:rgb(0, 0, 0);
+}
+
+.bayan__input:checked + .bayan__label__wrapper .bayan__label__span {
+    color:rgb(0, 0, 0);
+}
+
+.bayan__input:checked + .bayan__label__wrapper .bayan__icon {
+    transform: rotate(135deg);
+}
+
+@media(hover: hover) {
+    .bayan__wrapper:hover .bayan__label {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .bayan__wrapper:hover .bayan__icon {
+        opacity: 1;
+    }
+    
+    .bayan__label:hover .bayan__label__wrapper .bayan__icon {
+        transform: rotate(135deg);
+    }
+
+    .bayan__label:hover .bayan__img {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 1920px) {
+    .bayan__header {
+        font-size: 2.3em;
+    }
+
+    .bayan__label {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bayan__header {
+        font-size: 1.7em;
+    }
+
+    .bayan__label {
+        font-size: 1.25em;
+    }
+
+    .bayan__input:checked ~ .bayan__img {
+        max-height: 80vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .bayan__header {
+        font-size: 1em;
+    }
+
+    .bayan__label {
+        font-size: 0.85em;
+    }
+
+    .bayan__img {
+        margin-top: 2vh;
+    }
+
+    .bayan__input:checked ~ .bayan__img {
+        max-height: 85vh;
+    }
+}
