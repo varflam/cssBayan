@@ -7,12 +7,20 @@ body {
     background: rgb(181, 220, 181);
 }
 
-.bayan__wrapper {
+.bayan {
     max-width: 70vw;
     margin: 0 auto;
     padding-top: 10vh;
     padding-bottom: 10vh;
 
+}
+
+.bayan__wrapper:hover .bayan__label {
+    color: rgb(0, 0, 0);
+}
+
+.bayan__wrapper:hover .bayan__icon {
+    opacity: 1;
 }
 
 .bayan__header {
@@ -21,9 +29,11 @@ body {
 }
 
 .bayan__label {
+    color:rgb(41, 32, 148);
     font-size: 1.5em;
     font-weight: bold;
     padding-bottom: 5vh;
+    transition: .5s;
 }
 
 .bayan__label__wrapper {
@@ -33,7 +43,9 @@ body {
 }
 
 .bayan__icon {
+    opacity: 0;
     max-height: 5vh;
+    transition: .5s;
 }
 
 .bayan__img {
@@ -52,6 +64,14 @@ body {
 
 .bayan__input:checked ~ .bayan__img {
     max-height: 50vh;
+}
+
+.bayan__input:checked .bayan__label {
+    color:rgb(0, 0, 0);
+}
+
+.bayan__input:checked + .bayan__label__wrapper .bayan__icon, .bayan__label:hover .bayan__label__wrapper .bayan__icon {
+    transform: rotate(135deg);
 }
 
 .bayan__label:hover > .bayan__img {
