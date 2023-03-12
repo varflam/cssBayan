@@ -62,6 +62,10 @@ body {
     appearance: none;
 }
 
+.bayan__label:hover > .bayan__img {
+    max-height: 50vh;
+}
+
 .bayan__input:checked ~ .bayan__img {
     max-height: 50vh;
 }
@@ -74,6 +78,11 @@ body {
     transform: rotate(135deg);
 }
 
-.bayan__label:hover > .bayan__img {
-    max-height: 50vh;
+.bayan__input:checked + .bayan__label__wrapper .bayan__label__span {
+    color:rgb(0, 0, 0);
+}
+
+.bayan__input:checked + .bayan__label__wrapper .bayan__icon {
+    opacity: 1;
+    transform: rotate(135deg);
 }
