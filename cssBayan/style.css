@@ -8,11 +8,11 @@ body {
 }
 
 .bayan__wrapper {
-    max-width: 80vw;
+    max-width: 70vw;
     margin: 0 auto;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    
+
 }
 
 .bayan__header {
@@ -23,6 +23,16 @@ body {
 .bayan__label {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.bayan__label__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bayan__icon {
+    max-height: 5vh;
 }
 
 .bayan__img {
